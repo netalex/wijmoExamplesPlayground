@@ -32,6 +32,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # project to test [Angular Playground - Setup with Angular CLI](https://angularplayground.it/docs/getting-started/angular-cli)
 
+## Setup with Angular CLI
+
+-> branch steps/setupAngularCli
+
 1. run `ng add angular-playground`
    1. it adds
       1. `./angular-playground.json` -> with `sourceRoots ` for src dir and `appName` for Angular app's name, as specified in our angular.json.
@@ -54,3 +58,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
            ```
 
 2. `npm run playground` -> Navigate to `localhost:4201`
+
+---
+
+## Sandboxing Components
+
+-> branch `steps/sandboxingComponents`
+
+1. create a test component
+2. create a sandbox file
+   1. `ng generate angular-playground:sandbox [path]/[component name]` -> it creates a father component where to test our child component
+   NB:  has option `--flat` (optional, defaults to false): indicate whether a new directory should be created to hold the generated sandbox file
