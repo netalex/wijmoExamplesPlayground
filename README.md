@@ -25,3 +25,42 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+---
+
+
+# project to test [Angular Playground - Setup with Angular CLI](https://angularplayground.it/docs/getting-started/angular-cli)
+
+## Setup with Angular CLI
+
+-> branch steps/setupAngularCli
+
+1. run `ng add angular-playground`
+   1. it adds
+      1. `./angular-playground.json` -> with `sourceRoots ` for src dir and `appName` for Angular app's name, as specified in our angular.json.
+      2. `./src/main.playground.ts` -> A New Main Entry File
+          ```typescript
+              PlaygroundModule
+              .configure({
+                selector: 'app-root', // <- set your main component's selector
+                overlay: false,
+                modules: []
+              });
+          ```
+        1. it modifies
+           1. `./angular.json` adding
+           ```json
+            "projects": {
+              ...
+              "playground": { ... }
+            }
+           ```
+
+2. `npm run playground` -> Navigate to `localhost:4201`
+
+---
+
+## Sandboxing Components
+
+-> branch `steps/sandboxingComponents`
