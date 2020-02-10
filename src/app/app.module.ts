@@ -9,6 +9,10 @@ import { NoticeComponent } from './notice/notice.component';
 import { WjGridModule } from 'wijmo/wijmo.angular2.grid';
 import { WjChartModule } from 'wijmo/wijmo.angular2.chart';
 
+// apply Wijmo license key
+// import { setLicenseKey } from 'wijmo/wijmo';
+// setLicenseKey('your license key goes here');
+
 
 /* wijimo section */
 
