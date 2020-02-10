@@ -1,0 +1,20 @@
+<!-- The content below is only a placeholder and can be replaced. -->
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PH…">
+</div>
+<h2>Here are some Wijmo controls to help you start:</h2>
+<div class="App-panel">
+    <wj-flex-grid #flex [itemsSource]="data">
+    </wj-flex-grid>
+    <wj-flex-chart #chart [itemsSource]="data" [bindingX]="'country'">
+        <wj-flex-chart-series [binding]="'sales'" [name]="'Sales'">
+        </wj-flex-chart-series>
+        <wj-flex-chart-series [binding]="'expenses'" [name]="'Expenses'">
+        </wj-flex-chart-series>
+        <wj-flex-chart-series [binding]="'downloads'" [name]="'Downloads'">
+        </wj-flex-chart-series>
+    </wj-flex-chart>
+</div>
