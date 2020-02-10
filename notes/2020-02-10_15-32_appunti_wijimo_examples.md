@@ -1,0 +1,3 @@
+Appunti
+
+`npm install wijmo`
