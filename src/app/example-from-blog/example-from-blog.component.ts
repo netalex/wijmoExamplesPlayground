@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 
-// import Wijmo components
-import  * as grid from 'wijmo/wijmo.angular2.grid';
-import  * as chart from 'wijmo/wijmo.angular2.chart';
+// // import Wijmo components
+// import  * as grid from 'wijmo/wijmo.angular2.grid';
+// import  * as chart from 'wijmo/wijmo.angular2.chart';
 import {  WjFlexGrid } from 'wijmo/wijmo.angular2.grid'
 import {  WjFlexChart, WjFlexChartSeries } from 'wijmo/wijmo.angular2.chart'
 import { CollectionView } from "wijmo/wijmo";
@@ -13,9 +13,9 @@ import { CollectionView } from "wijmo/wijmo";
   styleUrls: ["./example-from-blog.component.scss"]
 })
 export class ExampleFromBlogComponent implements OnInit {
-  @ViewChild('flex', { static: false }) flex: WjFlexGrid;
-  @ViewChild('chart', { static: false }) chart: WjFlexChart;
-  @ViewChild('wj-flex-chart-series', { static: false }) WjFlexChartSeries: WjFlexChartSeries;
+  @ViewChild('flex', { static: true }) flex: WjFlexGrid;
+  @ViewChild('chart', { static: true }) chart: WjFlexChart;
+  @ViewChild('wj-flex-chart-series', { static: true }) WjFlexChartSeries: WjFlexChartSeries;
   title = "Wijmo Starter App";
   data = this.getData();
   getData() {
