@@ -47,3 +47,9 @@ fix package.json
 ```sh
 $ npm install
 ```
+package.json
+```sh
+"scripts": {
+  "compodoc": "npx compodoc -p src/tsconfig.app.json"
+}
+```
