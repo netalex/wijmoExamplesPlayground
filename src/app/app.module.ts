@@ -7,11 +7,13 @@ import { NoticeComponent } from './notice/notice.component';
 
 /* wijimo section */
 import { WjGridModule } from 'wijmo/wijmo.angular2.grid';
-import { WjChartModule } from 'wijmo/wijmo.angular2.chart';
+import { WjChartModule, WjFlexChartSeries, WjFlexChart } from 'wijmo/wijmo.angular2.chart';
 import { ExampleFromBlogComponent } from './example-from-blog/example-from-blog.component';
+import { EmptyChartComponent } from './empty-chart/empty-chart.component';
 
 // apply Wijmo license key
 // import { setLicenseKey } from 'wijmo/wijmo';
+// import * as wjChart from 'wijmo/wijmo.angular2.chart';
 // setLicenseKey('your license key goes here');
 
 
@@ -21,7 +23,9 @@ import { ExampleFromBlogComponent } from './example-from-blog/example-from-blog.
   declarations: [
     AppComponent,
     NoticeComponent,
-    ExampleFromBlogComponent
+    ExampleFromBlogComponent,
+    EmptyChartComponent,
+    // WjFlexChart, WjFlexChartSeries
   ],
   imports: [
     BrowserModule,
