@@ -9,6 +9,7 @@ import {WjGridModule} from 'wijmo/wijmo.angular2.grid';
 import {WjChartModule} from 'wijmo/wijmo.angular2.chart';
 import {ExampleFromBlogComponent} from './example-from-blog/example-from-blog.component';
 import {EmptyChartComponent} from './empty-chart/empty-chart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // apply Wijmo license key
 // import { setLicenseKey } from 'wijmo/wijmo';
@@ -30,7 +31,8 @@ import {EmptyChartComponent} from './empty-chart/empty-chart.component';
     BrowserModule,
     AppRoutingModule,
     WjGridModule,
-    WjChartModule
+    WjChartModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
