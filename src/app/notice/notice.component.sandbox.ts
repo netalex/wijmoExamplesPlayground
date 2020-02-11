@@ -1,5 +1,5 @@
-import { sandboxOf } from 'angular-playground';
-import { NoticeComponent } from './notice.component';
+import {sandboxOf} from 'angular-playground';
+import {NoticeComponent} from './notice.component';
 
 export default sandboxOf(NoticeComponent)
   .add('default', {

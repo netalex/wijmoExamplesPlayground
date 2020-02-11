@@ -1,27 +1,31 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-
+import {Component, OnInit, ViewChild} from '@angular/core';
 // // import Wijmo components
 // import  * as grid from 'wijmo/wijmo.angular2.grid';
 // import  * as chart from 'wijmo/wijmo.angular2.chart';
-import {  WjFlexGrid } from 'wijmo/wijmo.angular2.grid'
-import {  WjFlexChart, WjFlexChartSeries } from 'wijmo/wijmo.angular2.chart'
-import { CollectionView } from "wijmo/wijmo";
+import {WjFlexGrid} from 'wijmo/wijmo.angular2.grid';
+import {WjFlexChart, WjFlexChartSeries} from 'wijmo/wijmo.angular2.chart';
+import {CollectionView} from 'wijmo/wijmo';
 
 @Component({
-  selector: "app-example-from-blog",
-  templateUrl: "./example-from-blog.component.html",
-  styleUrls: ["./example-from-blog.component.scss"]
+  selector: 'app-example-from-blog',
+  templateUrl: './example-from-blog.component.html',
+  styleUrls: ['./example-from-blog.component.scss']
 })
 export class ExampleFromBlogComponent implements OnInit {
-  @ViewChild('flex', { static: true }) flex: WjFlexGrid;
-  @ViewChild('chart', { static: true }) chart: WjFlexChart;
-  @ViewChild('wj-flex-chart-series', { static: true }) WjFlexChartSeries: WjFlexChartSeries;
-  title = "Wijmo Starter App";
+  @ViewChild('flex', {static: true}) flex: WjFlexGrid;
+  @ViewChild('chart', {static: true}) chart: WjFlexChart;
+  @ViewChild('wj-flex-chart-series', {static: true}) WjFlexChartSeries: WjFlexChartSeries;
+  title = 'Wijmo Starter App';
   data = this.getData();
+
+  constructor() {
+  }
+
   getData() {
-    var countries = 'US,Germany,UK,Japan,Italy,Greece'.split(','),
-        data = [];
-    for (var i = 0; i < countries.length; i++) {
+    const countries = 'US,Germany,UK,Japan,Italy,Greece'.split(',');
+    const data = [];
+    // tslint:disable-next-line:prefer-for-of
+    for (let i = 0; i < countries.length; i++) {
       data.push({
         country: countries[i],
         sales: Math.random() * 10000,
@@ -34,7 +38,6 @@ export class ExampleFromBlogComponent implements OnInit {
     return new CollectionView(data);
   }
 
-  constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+  }
 }
